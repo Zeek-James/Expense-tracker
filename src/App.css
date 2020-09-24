@@ -1,0 +1,105 @@
+:root{
+  --box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: thistle;
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+  border: 1px dashed #aaaaaa;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header{
+  background-color: #000000;
+  color: thistle;
+  text-align: center;
+  padding: 5px 20px ;
+  margin-bottom: 30px;
+}
+
+.header span{
+  font-size: x-large;
+  color: #aaaaaa;
+  font-weight: bolder;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+h2{
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.healthy{
+  color: #000000;
+}
+
+.weak{
+  color: #ff0000;
+}
+
+.inc-exp-container{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.inc-exp-container > div{
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type{
+  border-right: 1px double #aaaaaa;
+}
+
+li{
+  list-style: none;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+li span{
+  float: right;
+}
+
+li:hover > .delete-btn{
+  display: block;
+}
+
+.delete-btn{
+  float: left;
+  color: #e9e7e7;
+  background-color: #ff0000;
+  cursor: pointer;
+  display: none;
+  border: 0;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+.add-transaction-btn{
+  background-color: #000000;
+  color: #aaaaaa;
+  border: 1px dashed thistle;
+  padding: 5px 20px;
+  cursor: pointer;
+  
+}
+
